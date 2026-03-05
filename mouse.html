@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Event</title>
+</head>
+
+<body>
+    <h2 id="text">Mouse Event Test</h2>
+    <button id="btn">Click or Double click me</button>
+
+<script>
+    var btn = document.getElementById("btn");
+    var text = document.getElementById("text");
+
+    btn.addEventListener("click", function() {
+        text.textContent = "Button clicked";
+    });
+
+ 
+    btn.addEventListener("dblclick", function() {
+        text.textContent = "Button double clicked";
+    });
+
+    text.addEventListener("mouseenter", function() {
+        text.textContent = "Mouse entered text";
+    });
+
+
+    text.addEventListener("mouseleave", function() {
+        text.textContent = "Mouse left text";
+    });
+</script>
+</body>
+</html>

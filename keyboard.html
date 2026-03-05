@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Keyboard Event</title>
+</head>
+
+<body>
+	<input type="text" id="input" placeholder="Enter some Text">
+	<p id="output"></p>
+<script>
+	
+	var input=document.getElementById("input");
+	var output=document.getElementById("output");
+
+	input.addEventLister("press a key",function(){
+	output.textcontent="key pressed";
+	} );
+
+	input.addEventLister("Double Click",function(){
+	output.textcontent="Button Double clicked";
+	} );
+
+	input.addEventListener("keyup",function(0{
+	output.textcontent="key Released"; 
+	});
+</script>
+</body>
+</html>
